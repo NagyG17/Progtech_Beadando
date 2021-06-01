@@ -1,0 +1,13 @@
+C:\Users\Gergő\Desktop\ProgtechManagment\ProgtechManagment\bin\Debug\netcoreapp3.1\ProgtechManagment.exe
+C:\Users\Gergő\Desktop\ProgtechManagment\ProgtechManagment\bin\Debug\netcoreapp3.1\ProgtechManagment.deps.json
+C:\Users\Gergő\Desktop\ProgtechManagment\ProgtechManagment\bin\Debug\netcoreapp3.1\ProgtechManagment.runtimeconfig.json
+C:\Users\Gergő\Desktop\ProgtechManagment\ProgtechManagment\bin\Debug\netcoreapp3.1\ProgtechManagment.runtimeconfig.dev.json
+C:\Users\Gergő\Desktop\ProgtechManagment\ProgtechManagment\bin\Debug\netcoreapp3.1\ProgtechManagment.dll
+C:\Users\Gergő\Desktop\ProgtechManagment\ProgtechManagment\bin\Debug\netcoreapp3.1\ProgtechManagment.pdb
+C:\Users\Gergő\Desktop\ProgtechManagment\ProgtechManagment\obj\Debug\netcoreapp3.1\ProgtechManagment.csprojAssemblyReference.cache
+C:\Users\Gergő\Desktop\ProgtechManagment\ProgtechManagment\obj\Debug\netcoreapp3.1\ProgtechManagment.AssemblyInfoInputs.cache
+C:\Users\Gergő\Desktop\ProgtechManagment\ProgtechManagment\obj\Debug\netcoreapp3.1\ProgtechManagment.AssemblyInfo.cs
+C:\Users\Gergő\Desktop\ProgtechManagment\ProgtechManagment\obj\Debug\netcoreapp3.1\ProgtechManagment.csproj.CoreCompileInputs.cache
+C:\Users\Gergő\Desktop\ProgtechManagment\ProgtechManagment\obj\Debug\netcoreapp3.1\ProgtechManagment.dll
+C:\Users\Gergő\Desktop\ProgtechManagment\ProgtechManagment\obj\Debug\netcoreapp3.1\ProgtechManagment.pdb
+C:\Users\Gergő\Desktop\ProgtechManagment\ProgtechManagment\obj\Debug\netcoreapp3.1\ProgtechManagment.genruntimeconfig.cache
