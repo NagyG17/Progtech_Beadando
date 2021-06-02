@@ -15,7 +15,7 @@ namespace ProgtechManagment
                 qwarehouse = new QualityWarehouseSingleton(); // ha nem, akkor létrehozza azt
 
             // visszaadja a példányt
-            return warehouse;
+            return qwarehouse;
         }
     }
 }

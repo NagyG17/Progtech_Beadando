@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using ProgtechManagment.Decorator;
 
 namespace ProgtechManagment
 {
@@ -8,20 +9,72 @@ namespace ProgtechManagment
     {
         protected override void SetPrompt()
         {
-            Prompt = "Ez az Order Management oldala. \nVálassz az alábbi lehetőségekből!";
+            Prompt = "Ez az Order Management oldala. \nVálassz az alábbi lehetőségekből, add meg melyik terméket szeretnéd megrendelni!";
         }
+        
+        private int consoleWriteClear(string productName)
+         {
+             Console.Clear();
+             Console.WriteLine("Add meg mennyi " + productName + " konzervet szeretnél rendelni!");
+             return Convert.ToInt32(Console.ReadLine());
 
 
-        protected override void SetOptions()
+         }
+         
+         
+
+         public override void managemenu() {
+
+            char c = Console.ReadKey().KeyChar;
+            Items.Lista();
+            switch (c)
+                {
+                    
+                    case '1':
+                        TomatoCan TC = new TomatoCan();
+                        int n = consoleWriteClear(TC.status());
+                        Items.addItem(n,TC.status());                                               
+                        managemenu();
+                        break;
+                    case '5':
+                        Console.Clear();
+                        
+                    
+                        break;
+                    default:
+                        break;
+                }
+            
+            }
+
+
+
+        List<string> Options = new List<string>();
+        public override void SetOptions()
         {
-            Options = new List<String>();
-            Options.Add("[1] Rendelés");
-            Options.Add("[2] Sex");
-            Options.Add("[3] Mégse sex");
-            Options.Add("[4] Exit");
-        }
+            Console.Clear();
+            
 
-        public override void drawMenu()
+            Options.Add("[1] Paradicsomos konzerv");
+            Options.Add("[2] Bab konzerv");
+            Options.Add("[3] Minőségi paradicsomos konzerv");
+            Options.Add("[4] Minőségi bab konzerv");
+            Options.Add("[5] Exit");
+            SetPrompt();
+            Console.WriteLine(Prompt);
+            
+            for (int i = 0; i < Options.Count; i++)
+            {
+                Console.WriteLine(Options[i]);
+                
+            }
+
+            managemenu();
+            Options.Clear();
+
+        }
+        
+        /*public override void drawMenu()
         {
             Console.Clear();
             SetPrompt();
@@ -31,6 +84,6 @@ namespace ProgtechManagment
             {
                 Console.WriteLine(Options[i]);
             }
-        }
+        }*/
     }
 }

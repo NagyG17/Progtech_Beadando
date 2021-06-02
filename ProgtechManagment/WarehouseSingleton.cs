@@ -17,5 +17,6 @@ namespace ProgtechManagment
             // visszaadja a példányt
             return warehouse;
         }
+        //xy lista
     }
 }
