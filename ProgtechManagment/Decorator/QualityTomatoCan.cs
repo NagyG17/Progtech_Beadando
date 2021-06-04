@@ -4,11 +4,15 @@ using System.Text;
 
 namespace ProgtechManagment.Decorator
 {
-    class QualityTomatoCan:TomatoCan
+    class QualityTomatoCan:CanBaseDecorator
     {
         public override string status()
         {
-            return "Minőségi" + status();
+            return "Minőségi " + base.status();
+        }
+        public QualityTomatoCan(CanBase canBase):base(canBase)
+        {
+
         }
     }
 }

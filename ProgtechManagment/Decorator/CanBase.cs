@@ -6,9 +6,9 @@ namespace ProgtechManagment.Decorator
 {
     abstract class CanBase
     {
-        public virtual string status()
-        {
-            return "Alap üres konzerv";
-        }
+        public abstract string status();
+        
+            
+        
     }
 }
