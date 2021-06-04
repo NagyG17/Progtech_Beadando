@@ -6,10 +6,11 @@ namespace ProgtechManagment
 {
     class Item
     {
-        public Item(int Quantity, string ProdName)
+        public Item(int Quantity, string ProdName,bool Quality)
         {
             this.quantity = Quantity;
             this.prodName = ProdName;
+            this.quality = Quality;
         }
         private int quantity;
         public int Quantity
@@ -28,5 +29,12 @@ namespace ProgtechManagment
             }
             get { return prodName; }
         }
+        private bool quality;
+        public bool Quality
+        {
+            set { quality = value; }
+            get { return quality; }
+        }
+
     }
 }

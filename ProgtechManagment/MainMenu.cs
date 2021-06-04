@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Threading;
 
 namespace ProgtechManagment
 {
@@ -21,33 +22,39 @@ namespace ProgtechManagment
             switch (c)
             {
                 case '1':
-                    OMenu.SetOptions();
+                    OMenu.managemenu();
                     //Options.Clear();
                     
                     break;
                 case '2':
-                    SACMenu.SetOptions();
+                    SACMenu.managemenu();
                     
                     break;
                 case '3':
-                    PMenu.SetOptions();
+                    PMenu.managemenu();
                     
                     break;
                 case '4':
-                    Environment.Exit(0);
+                    Console.WriteLine("A program 5 másodperc múlva bezárodik!");
+                    Thread.Sleep(5000);
+                    Environment.Exit(1);
                     break;
 
                 default:
-                    Console.WriteLine("!!!Megfelelő számot adj meg pls gecszexkriszrossz!!!");
+                    Console.WriteLine("Rossz karaktert adtál meg!!! Kérlek a menűszámoknak megfelelő számot adj meg!");
+                    Thread.Sleep(3000);
+                    Console.Clear();
+                    SetOptions();
+                    managemenu();
                     break;
             }
             
             SetOptions();
-            
             managemenu();
 
         }
-        public List<string> Options = new List<string>();
+
+        new List<string> Options = new List<string>();
         public override void SetOptions()
         {
             Options.Clear();
